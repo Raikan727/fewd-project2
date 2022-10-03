@@ -126,7 +126,18 @@ footer{
 }
 
 .contact-text{
-  word-break: break-all;
+  max-width: 30em;
+  margin-left: 27em;
+
+.contact-info {
+  font-weight: bolder;
 }
 
+.nav-footer{
+  padding-left: 52em;
+}
+
+#contact{
+  padding-bottom: 3em;
+}
 }
