@@ -1,211 +1,132 @@
-*{
- background: papayawhip;
- font-family: 'Open Sans', sans-serif;
- text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 1px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.section-1{
+  background-color: whitesmoke;
 }
 
-body{
-  padding: 5%;
+img {
+max-width: 95%;
 }
 
-img{
-  max-width:100%;
-}
-
-ul{
-  padding-left: 0;
-}
-
-li,
-h2,
-nav{
-  list-style: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 15px;
-  font-size: 18px;
-}
-
-h3{
-  font-weight: 600;
-}
-
-#top{
-  text-transform: uppercase;
-}
-
-.top{
-  margin: 16px 0;
-}
-
-a{
-  text-decoration: none;
-}
-
-a:hover{
-  text-decoration-line: underline;
-  color:dodgerblue
-}
-
-profile-pic{
-  padding-top: 50px;
-}
-
-.bio,
-.contact-container p,
-.contact-container p a{
-  color:lightslategray !important;
+li {
+  list-style-type: none;
+  font-weight: bold;
 }
 
 .portfolio-container{
-  padding-top: 10%;
-  padding-bottom: 10%;
+  justify-content: space-between;
 }
 
-#portfolio{
-  padding: 40px;
-}
-
-.project{
-  padding-bottom: 25px;
-}
-
-.contact-info{
-  font-weight: 700;
-}
-  
-.title{
-  font-size: 30px;
+.bio{
+  background-color: whitesmoke;
 }
 
 footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 700;
-  border-top: solid lightslategray 1px;
-  margin-top: 100px;
+  display: inline-flex;
+  border-top: 1px outset;
+  font-weight: bold;
+}
+
+.proj-1,
+.proj-2,
+.proj-3,
+.proj-4,
+.proj-5,
+.proj-6{
+  background-color: whitesmoke;
+}
+
+#contact{
+  padding-top: 75px;
+  background-color: whitesmoke;
 }
 
 .nav-footer{
   display: none;
 }
 
-@media screen and (min-width:768px) {
+@media (min-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.proj-1,
+.proj-2,
+.proj-3,
+.proj-4,
+.proj-5,
+.proj-6 {
+    flex-basis: calc(50% - 20px);
+  }
+
+.section-1{
+  display: flex;
+  flex-basis: calc(50% - 20px);
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+  }
+
   .nav{
     width: 335px;
     display: flex;
     margin: auto;
   }
 
-  img{
-    transition-duration: .5s;
+  .nav-footer{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0px;
   }
 
-.section-1{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 50px;
+  .nav-footer li{
+    padding-left: 20px;
+    }
+
+  .bio{
+    font-size: 18px;
+  }
+  .top{
+    display: none;
   }
 
-.profile-pic{
-padding-top: 0;
-width: 44%;
-height: 100%;
-}
-
-.bio{
-  width: 55%;
-  padding-right: 25px;
-  text-align: left;
-  margin-top: 0;
-  font-size: 1.25em;
-}
-
-.project{
-  float: left;
-  width: 45%;
-  margin: auto;
-}
-
-.project:nth-child(even) {
-  margin-right: 7%;
-}
-
-project img{
-  max-width: 108%;
-}
-
-.portfolio-text{
-  padding: 0 25px;
-}
-
-.contact-container{
-  max-width: 75%;
-  margin: auto;
-}
-
-.contact-text{
-  margin-bottom: 50px;
-}
-
-.top{
-  display: none;
-}
-
-.nav-footer{
-  display: flex;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  color: lightslategray;
-}
-
-.nav-footer li{
-list-style: none;
-padding-left: 20px;
-}
-
-img:hover{
-  transform: scale(1.25);
+  .contact-text{
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-    padding-bottom:0;
-  }
-
-    header {
+  header{
     display: flex;
-    justify-content: space-between;
-    }
-
-
-  .nav{
-    margin: initial;
-    align-items: center;
   }
 
-  .bio{
-    font-size: 1.75em;
+  .nav {
+    width: 0;
+    display: flex;
+    margin: auto;
+    padding-left: 25em;
   }
 
-  .project:nth-child(even){
-    margin-right: 0;
+  .portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
   }
 
-  .project.proj-1,
-  .project.proj-3,
-  .project.proj-5 {
-    margin-right: 5%;
-  }
+.project{
+  list-style: none;
+  flex: 1 1 330px;
+}
 
-  .project img {
-    max-width: 100%;
-  }
+.contact-text{
+  word-break: break-all;
+}
 
-  .contact-container{
-    max-width: 50%;
-    margin-top: 5%;
-  }
 }
